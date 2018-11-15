@@ -2,8 +2,17 @@
 //
 
 #include "my_header.h"
+#include "TP_lib.h"
+#include "cvi_gui.h"
 
-int main(void)
+int main (void)
 {
-    return 0;
+	short resultat, i=0;
+	while (i<10)
+	{
+		resultat = LancerDe();
+		i++;
+		DisplayLong ("vous avez tirez", resultat);   
+	}
+		return 0;
 }
